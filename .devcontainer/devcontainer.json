@@ -1,0 +1,11 @@
+{
+  "name": "Strapi Dev",
+  "image": "node:18-bullseye",
+  "postCreateCommand": "yarn install",
+  "forwardPorts": [1337],
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint"]
+    }
+  }
+}
