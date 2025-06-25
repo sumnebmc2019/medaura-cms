@@ -29,6 +29,21 @@
         "videos",
         "audios"
       ]
+    },
+    "LinkedIn": {
+      "type": "string"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "Instagram": {
+      "type": "string"
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
     }
   }
 }
