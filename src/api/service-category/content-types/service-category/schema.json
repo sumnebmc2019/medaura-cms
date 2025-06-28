@@ -1,9 +1,0 @@
-{
-  "kind": "collectionType",
-  "collectionName": "service_categories",
-  "info": { "singularName": "service-category", "pluralName": "service-categories", "displayName": "Service Category" },
-  "attributes": {
-    "name": { "type": "string" },
-    "slug": { "type": "uid", "targetField": "name" }
-  }
-}
