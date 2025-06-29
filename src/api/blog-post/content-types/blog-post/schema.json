@@ -6,17 +6,44 @@
     "pluralName": "blog-posts",
     "displayName": "Blog Post"
   },
-  "options": { "draftAndPublish": true },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
   "attributes": {
-    "title": { "type": "string", "required": true },
-    "slug": { "type": "uid", "targetField": "title" },
-    "coverImage": { "type": "media", "allowedTypes": ["images"] },
-    "content": { "type": "richtext" },
-    "publishedAt": { "type": "datetime" },
-    "category": {
+    "Title": {
+      "type": "text"
+    },
+    "blog_category": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::blog-category.blog-category"
+      "target": "api::blog-category.blog-category",
+      "inversedBy": "blog_posts"
+    },
+    "Body": {
+      "type": "blocks"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Author": {
+      "type": "enumeration",
+      "enum": [
+        "Dr Jaswanth M K",
+        "Dr Jeevan K P",
+        "Dr Angappan K",
+        "Dr G Guganesh Vasan",
+        "Ayyappan K",
+        "Gowtham Raj",
+        "V A M Ganesan"
+      ]
     }
   }
 }

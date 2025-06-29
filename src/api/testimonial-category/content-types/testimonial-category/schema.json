@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonial_categories",
+  "info": {
+    "singularName": "testimonial-category",
+    "pluralName": "testimonial-categories",
+    "displayName": "Testimonial Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "testimonial": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::testimonial.testimonial",
+      "inversedBy": "testimonial_categories"
+    }
+  }
+}

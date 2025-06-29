@@ -9,10 +9,35 @@
   "options": {
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
-    "author": { "type": "string" },
-    "company": { "type": "string" },
-    "quote": { "type": "text" },
-    "photo": { "type": "media", "allowedTypes": ["images"] }
+    "ReviewerName": {
+      "type": "string"
+    },
+    "testimonial_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial-category.testimonial-category",
+      "mappedBy": "testimonial"
+    },
+    "Service_Category": {
+      "type": "string"
+    },
+    "Country_Location": {
+      "type": "string"
+    },
+    "Review": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
   }
 }

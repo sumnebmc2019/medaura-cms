@@ -6,16 +6,54 @@
     "pluralName": "services",
     "displayName": "Service"
   },
-  "options": { "draftAndPublish": true },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
   "attributes": {
-    "title": { "type": "string", "required": true },
-    "slug": { "type": "uid", "targetField": "title" },
-    "description": { "type": "richtext" },
-    "icon": { "type": "media", "allowedTypes": ["images"] },
+    "Title": {
+      "type": "string"
+    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::service-category.service-category"
+      "target": "api::service-category.service-category",
+      "inversedBy": "services"
+    },
+    "Estimate_Cost": {
+      "type": "biginteger"
+    },
+    "Approx_Stay_Duration": {
+      "type": "integer"
+    },
+    "Description_1": {
+      "type": "blocks"
+    },
+    "Description_2": {
+      "type": "blocks"
+    },
+    "Description_3": {
+      "type": "blocks"
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
