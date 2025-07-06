@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fa_qs_categories",
+  "info": {
+    "singularName": "fa-qs-category",
+    "pluralName": "fa-qs-categories",
+    "displayName": "FAQs Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "fa_qs_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fa-qs-post.fa-qs-post",
+      "mappedBy": "fa_qs_category"
+    }
+  }
+}

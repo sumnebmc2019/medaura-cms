@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events_categories",
+  "info": {
+    "singularName": "events-category",
+    "pluralName": "events-categories",
+    "displayName": "Events Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "events_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::events-post.events-post",
+      "mappedBy": "events_category"
+    }
+  }
+}

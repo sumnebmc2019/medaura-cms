@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events_posts",
+  "info": {
+    "singularName": "events-post",
+    "pluralName": "events-posts",
+    "displayName": "Events Post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "events_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::events-category.events-category",
+      "inversedBy": "events_posts"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "EventDate": {
+      "type": "datetime"
+    },
+    "Venue": {
+      "type": "string"
+    }
+  }
+}
