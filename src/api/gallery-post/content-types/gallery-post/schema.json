@@ -37,7 +37,6 @@
       "type": "string"
     },
 
-    /* --- SEO Fields --- */
     "metaTitle": {
       "type": "string",
       "required": false,
