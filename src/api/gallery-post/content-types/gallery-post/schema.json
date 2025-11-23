@@ -35,6 +35,58 @@
     },
     "Author": {
       "type": "string"
+    },
+
+    /* --- SEO Fields --- */
+    "metaTitle": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": false,
+      "default": ""
+    },
+    "metaKeywords": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "canonicalUrl": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "ogTitle": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "ogDescription": {
+      "type": "text",
+      "required": false,
+      "default": ""
+    },
+    "ogImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "twitterTitle": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "twitterDescription": {
+      "type": "text",
+      "required": false,
+      "default": ""
+    },
+    "twitterImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
     }
   }
 }
