@@ -40,7 +40,6 @@
       ]
     },
 
-    /* --- SEO Fields --- */
     "metaTitle": {
       "type": "string",
       "required": false,
