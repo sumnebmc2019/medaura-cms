@@ -9,10 +9,19 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "Title": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "blog_category": {
       "type": "relation",
@@ -21,10 +30,20 @@
       "inversedBy": "blog_posts"
     },
     "Body": {
-      "type": "blocks"
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "Image": {
       "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "multiple": true,
       "allowedTypes": [
         "images",
@@ -35,6 +54,11 @@
     },
     "Author": {
       "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "enum": [
         "Dr Jaswanth M K",
         "Dr Jeevan K P",
@@ -47,53 +71,99 @@
     },
     "metaTitle": {
       "type": "string",
-      "required": false,
-      "default": ""
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
     },
     "metaDescription": {
       "type": "text",
-      "required": false,
-      "default": ""
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
     },
     "metaKeywords": {
       "type": "string",
-      "required": false,
-      "default": ""
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
     },
     "canonicalUrl": {
       "type": "string",
-      "required": false,
-      "default": ""
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
     },
     "ogTitle": {
       "type": "string",
-      "required": false,
-      "default": ""
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
     },
     "ogDescription": {
       "type": "text",
-      "required": false,
-      "default": ""
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
     },
     "ogImage": {
       "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "twitterTitle": {
       "type": "string",
-      "required": false,
-      "default": ""
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
     },
     "twitterDescription": {
       "type": "text",
-      "required": false,
-      "default": ""
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
     },
     "twitterImage": {
       "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
